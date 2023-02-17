@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body, .profile-text h2, .profile-text p{
+    padding: 0;
+    margin: 0;
+}
+
+
+header, #container{
+    max-width: 550px;
+    margin: 0 auto;
+}
+#container{
+    max-width: 550px;
+    max-height: 450vh;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    padding: 0 0.5em;
+    
+}
+#acc{
+    width: 2.5em;
+}
+
+#logo{
+    width: 5.2em;
+}
+#chat{
+    width: 2.125em;
+}
+
+.navigation-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.125em;
+
+}
+
+#profile{
+    
+    width: 100%;
+    max-height: 70vh;
+    overflow: hidden;
+    
+    position: relative;
+}
+
+.dog-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.5em;
+
+}
+
+.gradient-layer{
+    
+    position: absolute;
+    top: 1em;
+    left: 0em;
+    right: em;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.9) -11.44%, rgba(0, 0, 0, 0) 39.97%);
+}
+.profile-text{
+    position: absolute;
+    max-width: 80%;
+    bottom: 3em;
+    left:1.5em;
+    
+}
+
+.profile-text h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    color: #F8F8F8;
+}
+
+.profile-text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #B7B7B7;
+}
+
+
+
+.badge-like{
+    display:none;
+}
+
+.badge-nope{
+    display:none;
+}
+.active{
+    display: block;
+    width: 300px;
+    transform: rotate(-30deg);
+    
+    position: absolute;
+    top:5em;
+    left: 2em; 
+}
+
+
+
+#actions {
+    display: flex;
+    gap: 1.5em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+#actions button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-repeat: no-repeat ;
+    background-position: center;
+    /* background-size: 1em; */
+    padding: 1.5em;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #d3d3da;
+  }
+  
+  #like {
+    background-image: url("./images/icon-heart.png");
+    background-size: 2em ;
+
+  }
+  #like:active, #like:hover {
+    background-color: #DBFFF4;
+  }
+  
+  #cross {
+    background-image: url("./images/icon-cross.png");
+    background-size: 1.8em ;
+
+  }
+   #cross:active, #cross:hover{
+    background-color:  #FFE7EF ;
+  }

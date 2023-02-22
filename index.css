@@ -14,7 +14,7 @@ header, #container{
 }
 #container{
     max-width: 550px;
-    max-height: 450vh;
+    max-height: 480vh;
     overflow: hidden;
     display: block;
     width: 100%;
